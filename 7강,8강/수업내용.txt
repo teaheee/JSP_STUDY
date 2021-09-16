@@ -1,0 +1,10 @@
+CREATE TABLE student(
+	st_no NUMBER(3) PRIMARY KEY,
+	st_name VARCHAR2(20) NOT NULL,
+	st_tel	VARCHAR2(16) NOT NULL UNIQUE,
+	st_kr NUMBER DEFAULT 0 CHECK (st_kr >= 0 AND st_kr <= 100), 
+	st_en NUMBER DEFAULT 0 CHECK (st_en >= 0 AND st_en <= 100),
+	st_ma NUMBER DEFAULT 0 CHECK (st_ma >= 0 AND st_ma <= 100), 
+	st_avg NUMBER DEFAULT 0 CHECK (st_avg >= 0 AND st_avg <= 100),
+	st_regdate DATE
+);
