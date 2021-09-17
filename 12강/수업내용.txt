@@ -1,0 +1,9 @@
+< 자바로 쿼리문 실행 >
+
+1. 연결 (Connection)
+
+2. 쿼리문 준비 (PreparedStatement)
+
+3. 실행 (execute())
+
+4. 정리 (close())
